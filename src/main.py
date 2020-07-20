@@ -92,8 +92,9 @@ def main():
         # calculate Mahalanobis distance per each level of EfficientNet
         dist_list = []
         for t_idx, test_output in enumerate(test_outputs):
-            dist = [mahalanobis(sample, train_outputs[t_idx][0], np.linalg.inv(train_outputs[t_idx][1]))
-                    for sample in test_output]
+            mean = train_outputs[t_idx][0]
+            cov_inv = np.linalg.inv(train_outputs[t_idx][1])
+            dist = [mahalanobis(sample, mean, cov_inv) for sample in test_output]
             dist_list.append(np.array(dist))
 
         # Anomaly score is followed by unweighted summation of the Mahalanobis distances
