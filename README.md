@@ -2,8 +2,8 @@
 
 PyTorch implementation of [Modeling the Distribution of Normal Data in Pre-Trained Deep Features for Anomaly Detection](https://arxiv.org/abs/2005.14140).  
 
-this paper presents an anomaly detection approach that consists of fitting a multivariate Gaussian to normal data in the pre-trained deep feature representations, using Mahalanobis distance as anomaly score.  
-It is simple yet effective approach and achieves SOTA on `MVTec AD` dataset.  
+This paper presents an anomaly detection approach that consists of fitting a multivariate Gaussian to normal data in the pre-trained deep feature representations, using Mahalanobis distance as anomaly score.  
+It is a simple yet effective approach and achieves SOTA on `MVTec AD` dataset.  
 
 ## Prerequisites
 * python 3.6+
