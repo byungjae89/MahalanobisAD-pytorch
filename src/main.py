@@ -131,8 +131,8 @@ class EfficientNetModified(EfficientNet):
             if drop_connect_rate:
                 drop_connect_rate *= float(idx) / len(self._blocks)
             x = block(x, drop_connect_rate=drop_connect_rate)
-            if x_prev.shape[1] != x.shape[1]:
-                feat_list.append(F.adaptive_avg_pool2d(x, 1))
+            if (x_prev.shape[1] != x.shape[1] and idx != 0) or idx == (len(self._blocks) - 1):
+                feat_list.append(F.adaptive_avg_pool2d(x_prev, 1))
             x_prev = x
 
         # Head

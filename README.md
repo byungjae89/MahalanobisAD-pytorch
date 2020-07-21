@@ -35,20 +35,20 @@ Below is the implementation result of the test set ROCAUC on the `MVTec AD` data
 | | Paper | Implementation |
 | - | - | - |
 | bottle | - | 100.0 |
-| cable | - | 93.8 |
-| capsule | - | 91.7 |
-| carpet | - | 98.0 |
-| grid | - | 94.7 |
-| hazelnut | - | 98.5 |
+| cable | - | 94.2 |
+| capsule | - | 92.3 |
+| carpet | - | 98.1 |
+| grid | - | 94.6 |
+| hazelnut | - | 98.6 |
 | leather | - | 100.0 |
-| metal_nut | - | 94.0 |
-| pill | - | 84.9 |
-| screw | - | 77.2 |
-| tile | - | 98.5 |
-| toothbrush | - | 96.4 |
+| metal_nut | - | 94.3 |
+| pill | - | 83.4 |
+| screw | - | 78.1 |
+| tile | - | 98.6 |
+| toothbrush | - | 96.7 |
 | transistor | - | 96.1 |
 | wood | - | 98.5 |
-| zipper | - | 97.6 |
+| zipper | - | 97.7 |
 | Average | 94.8 | 94.7 |
 
 ### ROC Curve 
