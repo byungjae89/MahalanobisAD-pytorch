@@ -3,4 +3,3 @@ torchvision
 efficientnet_pytorch
 sklearn
 matplotlib
-wget
