@@ -8,7 +8,7 @@ It is a simple yet effective approach and achieves SOTA on `MVTec AD` dataset.
 ## Prerequisites
 * python 3.6+
 * PyTorch 1.5+
-* efficientnet_pytorch, sklearn, matplotlib, wget
+* efficientnet_pytorch, sklearn, matplotlib
 
 Install prerequisites with:  
 ```
